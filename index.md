@@ -296,7 +296,7 @@ address.
             {% endcomment %}
             <p id="requirements">
             {% if online == "false" %}
-                Participants must bring a laptop which can connect to the Eduroam or NOCstaff wifi.
+                Participants must bring a laptop which can connect to the NOC VPN or NOCstaff wifi.
             {% else %}
                 Participants must have access to a computer with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
