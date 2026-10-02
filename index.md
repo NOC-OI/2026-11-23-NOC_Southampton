@@ -100,7 +100,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please go directly to the <a href="https://www.eventbrite.co.uk/e/introduction-to-shell-python-and-git-tickets-2001042767785">registration page.</strong>
+  registration box below, please go directly to the <a href="https://www.eventbrite.co.uk/e/introduction-to-shell-python-and-git-tickets-2001042767785">registration page.</a></strong>
 <div id="eventbrite-widget-container"></div>
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 <script type="text/javascript">
@@ -185,6 +185,22 @@ Edit the general explanatory paragraph below if you want to change the pitch.
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
 
+<p id="about-this-workshop">
+  <strong>About this workshop:</strong>
+  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. 
+  It will be possible to only attend part(s) of this workshop - for example, to come to the Git section but not the other two. If you would like to do this, there should be a section on the sign up form to indicate this. Please do also feel free to email us about it. We will send around more detailed timings on when each section will be nearer the time. 
+  If you have any questions, please get in touch with us. 
+</p>
+
+<p id="course-notes">
+  <strong>Course Notes:</strong>
+  You can find links to the course notes for these topics below:
+  <ul>
+    <li><a href="https://swcarpentry.github.io/shell-novice/">Shell</a></li>
+    <li><a href="https://noc-oi.github.io/python-novice-esces/">Python</a></li>
+    <li><a href="https://noc-oi.github.io/git-novice/">Git</a></li>
+  </ul>
+</p>
 
 {% comment %}
 LOCATION
@@ -297,14 +313,6 @@ address.
 
             <p id="accessibility">
             We are committed to making this workshop accessible to everybody. 
-            {% if online == "false" %}
-                The workshop organizers have checked that:
-                <br/>
-                <ul>
-                    <li>The room is wheelchair / scooter accessible.</li>
-                    <li>Accessible restrooms are available.</li>
-                </ul>
-            {% endif %}
             </p>
             <p>
             We are dedicated to providing a positive and accessible learning environment for all. 
@@ -333,7 +341,7 @@ address.
             <p id="recordings">
             Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
             To foster a positive online learning environment, we strongly recommend that participants join in real time.
-            As a result, workshop recordings are not recommended and may not be available to learners.
+            We aim to record workshops, but cannot guarantee this and so recordings may not be available to learners.
             </p>
         </dd>
     </div>
@@ -400,12 +408,13 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
+{% endcomment %}
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to ....
+    This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
 </p>
-{% endcomment %}
+
 
 
 {% comment %}
