@@ -113,6 +113,22 @@ displayed if the 'eventbrite' field in the header is not set.
 </script>
 {% endif %}
 
+<p id="about-this-workshop">
+  <strong>About this workshop:</strong>
+  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. 
+  It will be possible to only attend part(s) of this workshop - for example, to come to the Git section but not the other two. If you would like to do this, there should be a section on the sign up form to indicate this. Please do also feel free to email us about it. We will send around more detailed timings on when each section will be nearer the time. 
+  If you have any questions, please get in touch with us. 
+</p>
+
+<p id="course-notes">
+  <strong>Course Notes:</strong>
+  You can find links to the course notes for these topics below:
+  <ul>
+    <li><a href="https://swcarpentry.github.io/shell-novice/">Shell</a></li>
+    <li><a href="https://noc-oi.github.io/python-novice-esces/">Python</a></li>
+    <li><a href="https://noc-oi.github.io/git-novice/">Git</a></li>
+  </ul>
+</p>
 
 {% comment %}
 INTRODUCTION
@@ -184,23 +200,6 @@ Edit the general explanatory paragraph below if you want to change the pitch.
 {% if site.pilot %}
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
-
-<p id="about-this-workshop">
-  <strong>About this workshop:</strong>
-  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. 
-  It will be possible to only attend part(s) of this workshop - for example, to come to the Git section but not the other two. If you would like to do this, there should be a section on the sign up form to indicate this. Please do also feel free to email us about it. We will send around more detailed timings on when each section will be nearer the time. 
-  If you have any questions, please get in touch with us. 
-</p>
-
-<p id="course-notes">
-  <strong>Course Notes:</strong>
-  You can find links to the course notes for these topics below:
-  <ul>
-    <li><a href="https://swcarpentry.github.io/shell-novice/">Shell</a></li>
-    <li><a href="https://noc-oi.github.io/python-novice-esces/">Python</a></li>
-    <li><a href="https://noc-oi.github.io/git-novice/">Git</a></li>
-  </ul>
-</p>
 
 {% comment %}
 LOCATION
@@ -408,13 +407,13 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-{% endcomment %}
+
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
     This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
 </p>
-
+{% endcomment %}
 
 
 {% comment %}
@@ -517,7 +516,7 @@ rows to the table if you wish to break down the schedule
 further. To use this custom schedule here, replace the block
 of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
-{% endcomment %}
+
 
 <div class="card mb-2">
   <h5 class="card-header">Schedule</h5>
@@ -541,7 +540,7 @@ of code below the Schedule `<h2>` header below with
     {% endif %}
   </div>
 </div>
-
+{% endcomment %}
 <hr/>
 
 
@@ -555,7 +554,7 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
-{% endcomment %}
+
 
 <h2 id="setup">Setup</h2>
 <p>
@@ -577,7 +576,7 @@ please preview your site before committing, and make sure to run
   <a href="{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-
+{% endcomment %}
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
