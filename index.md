@@ -231,11 +231,16 @@ address.
 
             Explain who your audience is.  (In particular, tell readers if the
             workshop is only open to people from a particular institution.
-            {% endcomment %}
+
             {% assign who_file = site.carpentry | append: '/who.html' %}
             {% if isOfficial %}
             {% include {{ who_file }} %}
-            {% endif %}    
+            {% endif %}
+            {% endcomment %}
+            <p id="who">
+            This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
+
+            </p>
         </dd>
     </div>
     <div class="row">
@@ -291,13 +296,14 @@ address.
             {% endcomment %}
             <p id="requirements">
             {% if online == "false" %}
-                Participants must bring a laptop with a
-                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+                Participants must bring a laptop which can connect to the Eduroam or NOCstaff wifi.
             {% else %}
                 Participants must have access to a computer with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
             {% endif %}
+            {% comment %}
             They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+            {% endcomment %}
             </p>
         </dd>  
     </div>
@@ -592,7 +598,7 @@ If you do not use Zoom for your online workshop, edit the file `_includes/instal
 
 {% comment %}
 These are the installation instructions for the tools used during the workshop.
-{% endcomment %}
+
 
 {% assign setup_file = site.carpentry | append: '/setup.html' %}
 {% if isOfficial %}
@@ -600,3 +606,4 @@ These are the installation instructions for the tools used during the workshop.
 {% elsif site.carpentry == "incubator" %}
   Please check the "Setup" page of <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow to obtain the software and data you will need to follow the lesson.
 {% endif %}
+{% endcomment %}
